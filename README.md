@@ -16,7 +16,7 @@ python main.py --malwarepath path_of_malware --benignpath path_of_benign_samples
 
 ```
 
-# Examples
+# Example
 ```
 python extract_header_fields.py --path ./malware_samples --header_fields_outputfile malware_header_fields.txt --section_names_outputfile malware_section_names.txt
 python extract_header_fields.py --path ./benign_samples --header_fields_outputfile benign_header_fields.txt --section_names_outputfile benign_section_names.txt
