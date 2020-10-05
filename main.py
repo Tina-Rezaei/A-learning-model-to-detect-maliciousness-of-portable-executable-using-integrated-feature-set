@@ -152,6 +152,7 @@ def learning(X, Y):
     }
 
     for algo in algorithms:
+        print('{} results'.format(algo))
         start_time = time.time()
         clf = algorithms[algo]
         scores = cross_validate(clf, X, Y, cv=10, scoring=('accuracy', 'f1', 'recall', 'precision'))
@@ -159,7 +160,7 @@ def learning(X, Y):
             print('{} : {}'.format(score_name, np.mean(scores[score_name])))
         end_time = time.time()
         execution_time = end_time - start_time
-        print('{} execution time {}'.format(algo, execution_time))
+        print('{} execution time {} \n'.format(algo, execution_time))
 
 
 @click.command()
