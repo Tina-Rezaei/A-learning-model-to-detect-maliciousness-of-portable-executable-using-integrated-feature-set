@@ -12,7 +12,7 @@ python extract_header_fields.py --path path_of_samples --header_fields_outputfil
 After that, you need to run main.py. It takes the path of malware and benign samples, and four other files were built in the previous step.
 
 ```
-python main.py --malwarepath path_of_malware --benignpath path_of_benign_samples --benignheaderfieldspath path_of_benign_output_file_for_header_fields --malwareheaderfieldspath path_of_malware_output_file_for_header_fields --malwaresectionnamespath path_of_malware_output_file_for_section_names --benignsectionnamespath path_of_benign_output_file_for_section_names 
+python main.py --malwarepath path_of_malware_samples --benignpath path_of_benign_samples --benignheaderfieldspath path_of_benign_output_file_for_header_fields --malwareheaderfieldspath path_of_malware_output_file_for_header_fields --malwaresectionnamespath path_of_malware_output_file_for_section_names --benignsectionnamespath path_of_benign_output_file_for_section_names 
 
 ```
 
