@@ -56,7 +56,7 @@ def Feature_extractor(path, header_fields_outputfile, section_names_outputfile):
     section_names_file = open(section_names_outputfile, 'w')
     for sample in samples:
         try:
-            pe = pefile.PE(path + sample)
+            pe = pefile.PE(os.path.join(path, sample))
 
             # extracting all fields of DOS header,File header, and Optional header
             for field in header_fields:
